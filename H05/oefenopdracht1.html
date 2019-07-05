@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Het statement for-in</title>
+</head>
+
+<body>
+	<h1>Het statement for-in</h1>
+	<div id="divResult"></div>
+
+	<script>
+	
+		// loop over alle eigenschappen van
+		// het ingebouwde object navigator
+		for (var i in window.navigator) {
+			document.getElementById('divResult').innerHTML +=
+				i + ': ' + window.navigator[i] + '<br />';
+        }
+        for(i = 8; i> 0; i-)
+        document.getElementById('divResult').innerHTML = i + 'dm';
+    }
+    for (i = 1; <= 99; i = i*2){
+        i /= 1.5;
+        for (var nummer = 0; nummer <= 100; nummer++){
+            if ( nummer == 77){
+                break; 
+            }
+        }
+    }
+	</script>
+</body>
+</html>

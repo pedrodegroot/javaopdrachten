@@ -1,0 +1,23 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Waar staat de spatie?</title>
+</head>
+
+<body>
+	<h1>Typ een tekst</h1>
+	<div id="divResult"></div>
+
+	<script>
+		// Lees een tekst in, en laat zien waar de eerste spatie staat.
+		var tekst = prompt('Typ een zin of een tekst');
+		var positie = tekst.indexOf(' ');	// zoek de positie van de eerste spatie
+		var totaal = 'Uw tekst: \"' + tekst + '\"<br />De eerste spatie staat op positie : ' + positie;
+
+		// totaaltekst in het document plaatsen.
+		document.getElementById('divResult').innerHTML = totaal;
+
+	</script>
+</body>
+</html>
